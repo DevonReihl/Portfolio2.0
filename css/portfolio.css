@@ -1,0 +1,115 @@
+
+body {
+	/* background-image: url("https://i.pinimg.com/originals/e0/d0/67/e0d067202106b85c5d1fc7a67683704f.jpg"); */
+    /* background-position: center center;
+	background-size: cover; */
+	/* removed image to simplify portfolio*/
+	background-color: grey;
+}
+nav {
+	height: 40px;
+	background-color: darkgoldenrod;
+	font-size: large;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* adding to make links more dynamic*/
+a {
+	font-size: 30px;
+	padding-left: 15px;
+  }
+  
+  a:link    { color: rgb(251, 251, 251);  }
+  a:visited { color: rgb(18, 198, 243);   }
+  a:hover   { color:rgb(190, 228, 250);  }
+  a:active { color: rgb(57, 120, 236);} 
+
+  .navbar {
+	text-align: end;
+  }
+h1, h2, h3{ /* all headers to be centered and same padding*/
+	padding:20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 100px;
+	font-family: futura;
+	margin:100px;
+	/*padding:50px;*/
+}
+
+p{
+	font-size: 40px;
+	font-family: futura;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 70px;
+	padding-top:20px;
+}
+
+.profile{
+	float: right;
+	width: 450px;
+	height: 450px;
+	margin: 15px;
+	padding-bottom:35px;
+}
+
+h2{
+	font-size: 50px;
+	margin-top:20px;
+	padding-top:20px;
+}
+
+h3{
+	font-size: 30px;
+	margin-top:20px;
+	padding-top:15px;
+}
+
+.white-text{
+  color: white;
+}
+.black-text{
+  color: rgb(0,0,0);
+}
+.box{
+	background-color:rgb(250, 250, 250, .3);
+	border: 1px solid black;
+	margin:20px 60px;
+	
+}
+
+ul{
+	
+	text-align: center;
+	list-style:circle;
+	list-style-position: inside;
+}
+ol{
+	list-style: upper-roman;
+	text-align: center;
+	list-style-position: inside;
+}
+li{
+	display: inline;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+}
+
+
