@@ -2,47 +2,20 @@
   <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <title>Portfolio</title>
+      <title>DevonReihlPortfolio</title>
       <link rel="stylesheet" href="./css/portfolio.css">
 	  <link rel="stylesheet" href="./css/photo_animation.css">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-      <!-- Bootstrap CSS -->
-      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     </head>
     <body>
   
-  <!--NAVBAR-->
-	   <!-- removed navbar using bootstrap-->
-	   <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-fixed-top">
-			<a class="navbar-brand text-white" href="#">Devon Reihl</a>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			  <ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-				  <a class="nav-link text-white" href="#section1">About</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link text-white" href="#section2">Skills</a>
-				</li>
-                <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Projects
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="Library_system.sql" target="_blank">Project1- Sql library system </a>
-					  <a class="dropdown-item" href="pizza_menu.html" target="_blank">Project2- JavaScript pizzamenu</a>
-					  <a class="dropdown-item" href="CarInsuranceMvc.zip" target="_blank">Project3-Car Insurance MVC</a>
-					  <a class="dropdown-item" href="#">Project4</a>
-					  <a class="dropdown-item" href="ReihlUniversity.zip" target="_blank">Project5-Reihl University</a>
-					  <a class="dropdown-item" href="#">Project6</a>
-					</div>
-				</li>
-			  </ul>
-			</div>
-		  </nav> -->
-		  <nav class= "white-text">
-			  <ul class = "navbar">
+  		<!--NAVBAR-->
+
+		<header>
+			<nav class= "white-text flex-container">
+				<h1>Devon Reihl </h1>
+				<ul class = "navbar">
 				  <li>
 					<a  href="#section1">About</a> 
 				  </li>
@@ -52,67 +25,76 @@
 				  <li>
 					<a  href="#section3">Projects</a> 
 				  </li>
+				  <li>
+					<a  href="contact.html" target="_blank">Contact</a> 
+				  </li>
 			  </ul>
-		  </nav>
-  
-		  <hr>
-  <!--ABOUT-->
-  	  <header id="section1">
-        <div class="box">
-          <h1 class="black-text text-center">
-			Devon Reihl
-			<img src="./img/devonReihl.jpg" class="profile" alt="">
-		  </h1>
+		  	</nav>
 
+		</header>
 		  
-		  
-		  <p class="black-text text-center">
-			Hi I am Devon, and I am an up and coming software developer in Portland, OR! 
-			Born in Arizona I went to college for Psychology and music. 
-			After working with mentally ill adults for a short time I switched focus to become a mom.  
-			My many skills from years as a homeschooling mom and new coding skills put her in the right place to take on the world. 
-          </p>
-        </div>
-	</header>
+		<!--ABOUT-->
+	  
+		<section id="section1">
+	
+        	<div class="box flex-container black-text text-center">
+				<div class="items-double">
+					<p>
+						Hi I am Devon, and I am an up and coming software developer in Portland, OR! 
+						Born in Arizona I went to college for Psychology and music. 
+						After working with mentally ill adults for a short time I switched focus to become a mom.  
+						My many skills from years as a homeschooling mom and new coding skills put her in the right place to take on the world. 
+					</p>
+				</div>
+			
+				<div class="items">
+					<img src="img/devonReihl.jpg" alt="" >
+				</div>
+		 
+        	</div>
+		</section>
   
-	  <hr>
+	  	<hr>
 
-	<!--SKILLS-->
-      <section id="section2">
-        <h2 class="white-text">
-          What can I bring to your company
-		</h2><br><br>
-		
-		<h3>Human Skills</h3>
-		<ul>
-			<li>Friendly,</li>
-			<li>Kind,</li>
-			<li>Honest,</li>
-			<li>Loyal,</li>
-			<li>Profectionist</li>
-		</ul>
+		<!--SKILLS-->
+	 
+		<section id="section2">
+			<h2>
+			What can I bring to your company
+			</h2>
+			
+			<h3>Human Skills</h3>
+				<ul>
+					<li>Friendly,</li>
+					<li>Kind,</li>
+					<li>Honest,</li>
+					<li>Loyal,</li>
+					<li>Profectionist</li>
+				</ul>
 
-		<h3>Professional Skills</h3>
-		<ul>
-			<li>Bachelors degree,</li>
-			<li>Organized,</li>
-			<li>Dependable,</li>
-			<li>Hard worker (independent and groups),</li>
-			<li>Detail Oriented</li>
-		</ul>
+			<h3>Professional Skills</h3>
+				<ul>
+					<li>Bachelors degree,</li>
+					<li>Organized,</li>
+					<li>Dependable,</li>
+					<li>Hard worker (independent and groups),</li>
+					<li>Detail Oriented</li>
+				</ul>
 
-		<h3>Coding Skills</h3>
-		<ol>
-			<li>Javascript,</li>
-			<li>HTML,</li>
-			<li>CSS,</li>
-			<li>SQL,</li>
-			<li>JSON,</li>
-			<li>Version Control,</li>
-			<li>.Net,</li>
-			<li>C#</li>
+			<h3>Coding Skills</h3>
+				<ol>
+					<li>Javascript,</li>
+					<li>HTML,</li>
+					<li>CSS,</li>
+					<li>SQL,</li>
+					<li>JSON,</li>
+					<li>Version Control,</li>
+					<li>.Net,</li>
+					<li>C#</li>
 
-		</ol>
+				</ol>
+
+					<!--REMOVED BOOTSTRAP-->
 
         <!-- <div class="row text-white text-center">
           <div class="col-md-4">
@@ -135,14 +117,14 @@
           </div>
 		  </div> -->
 		  
-       </section><br><br>
+        </section>
 	  
-	   <hr>
+	   	<hr>
 
-   <!--Projects-->
+		<!--Projects-->
   
-      <section class="container-fluid text-center" id="section3">
-				<h2 class="text-white">Projects</h2><br>
+      	<section class="container-fluid text-center" id="section3">
+			<h2 class="text-white">Projects</h2><br>
 				<div class="flex-container">
 				
 					<!-- Project 1 -->
@@ -211,13 +193,13 @@
 	  <hr>
 
   <!--CONTACT-->
-            
+        <!--is an external page-->    
 
 
 
   <!--FOOTER-->
      
-	<footer>
+	<footer class="flex-container">
 		<nav id="navbar-example2" class="navbar" style="direction: rtl;">
 			<a class="navbar-brand text-white">&copy;2020 Devon Reihl</a>
 			<ul class="nav nav-pills">

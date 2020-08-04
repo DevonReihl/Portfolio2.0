@@ -1,0 +1,50 @@
+body{
+  background-image: url("https://i.pinimg.com/originals/e0/d0/67/e0d067202106b85c5d1fc7a67683704f.jpg");
+    background-position: center center;
+	background-size: cover;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: gray;
+    font-family: arial;
+  }
+  
+  form input[type=text] {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 150px;
+  }
+  
+ 
+
+  form textarea {
+    height: 4.75rem;
+    width: 30%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  form button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-family: Tahoma;
+    font-size: 16px;
+    background: blue;
+    color: #fff;
+    margin: 5px 5px 5px 0;
+    width: 100px;
+  }
