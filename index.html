@@ -5,7 +5,7 @@
       <title>DevonReihlPortfolio</title>
       <link rel="stylesheet" href="./css/portfolio.css">
 	  <link rel="stylesheet" href="./css/photo_animation.css">
-      <meta name="viewport" content="width=device-width>
+      <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
@@ -13,7 +13,7 @@
   		<!--NAVBAR-->
 
 		<header>
-			<nav class= "white-text flex-container">
+			<nav> 
 				<h1>Devon Reihl </h1>
 				<ul class = "navbar">
 				  <li>
@@ -37,7 +37,7 @@
 	  
 		<section id="section1">
 	
-        	<div class="box flex-container black-text text-center">
+        	<div class=" flex-container black-text text-center">  <!--box-->
 				<div class="items-double">
 					<p>
 						Hi I am Devon, and I am an up and coming software developer in Portland, OR! 
@@ -193,7 +193,26 @@
 	  <hr>
 
   <!--CONTACT-->
-        <!--is an external page-->    
+  	<section>
+		<form action="https://formspree.io/meqrnppq" method="POST">
+			<!-- add name -->
+			<label for="user-name">Name:</label>
+			<input id="user-name" type="text" name="name" autofocus="on" required>
+
+			<!--add email-->
+			<label for="email">Email:</label>
+			<input id="email" type="text" name="email" required>
+
+			<!--add message-->
+			<label for="form-message">Message: </label>
+			<textarea id="form-message" name="message"></textarea>
+
+			<!--add buttons to send form-->
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form> 
+	</section>   
+
 
 
 
@@ -201,18 +220,19 @@
      
 	<footer class="flex-container">
 		<nav id="navbar-example2" class="navbar" style="direction: rtl;">
-			<a class="navbar-brand text-white">&copy;2020 Devon Reihl</a>
+			
 			<ul class="nav nav-pills">
-			  <li class="nav-item">
-				<span style="font-size: 50px; color:blue;"><a class="nav-link" href="https://www.freecodecamp.org/mommareihl"><i class="fab fa-free-code-camp"></i></a></span>
-			  </li>
 			  <li class="nav-item">
 				<span style="font-size: 50px; color:blue;"><a class="nav-link" href="https://www.linkedin.com/in/devon-reihl-017307183/"><i class="fab fa-linkedin"></i></a></span>
 			  </li>
 			  <li class="nav-item">
-				<span style="font-size: 50px; color:blue;"><a class="nav-link active" href="https://github.com/MommaReihl"><i class="fab fa-github"></i></a></span>
+				<span style="font-size: 50px; color:blue;"><a class="nav-link active" href="https://github.com/DevonReihl"><i class="fab fa-github"></i></a></span>
+			  </li>
+			  <li class="nav-item">
+				<span style="font-size: 50px;"><a class="nav-link active" href="mailto: devon.reihl@gmail.com">Send Email</a></span>
 			  </li>
 			</ul>
+			<a class="navbar-brand text-white">&copy;2020 Devon Reihl</a>
 		  </nav>
 	</footer>  
 	 
