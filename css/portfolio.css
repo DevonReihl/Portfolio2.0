@@ -1,10 +1,10 @@
 
 body {
-	/* background-image: url("https://i.pinimg.com/originals/e0/d0/67/e0d067202106b85c5d1fc7a67683704f.jpg");
+	background-image: url("https://i.pinimg.com/originals/e0/d0/67/e0d067202106b85c5d1fc7a67683704f.jpg");
     background-position: center center;
 	background-size: cover; */
-	 /* removed image to simplify portfolio */
-	background-color: #949494;
+	 /* removed image to simplify portfolio
+	/* background-color: #949494; */
 	margin: 0;
 }
 header {
@@ -55,16 +55,19 @@ header nav ul li a{
 a {
 	font-size: 30px;
 	padding-left: 15px;
+	text-shadow: 1px 1px rgb(75, 74, 74);
   }
   
-  a:link    { color: rgb(251, 251, 251);  }
-  a:visited { color: rgb(18, 198, 243);   }
-  a:hover   { color:rgb(190, 228, 250);  }
-  a:active { color: rgb(57, 120, 236);} 
+a:link    { color:  rgb(18, 198, 243);  }
+a:visited { color: rgb(18, 198, 243);   }
+a:hover   { color:rgb(58, 44, 250);  }
+a:active { color: rgb(57, 120, 236);} 
 
-  .navbar {
+
+.navbar {
 	text-align: end;
-  }
+}
+
 h2, h3{ /* all headers to be centered and same padding*/
 	padding:20px;
 	text-align: center;
@@ -72,19 +75,21 @@ h2, h3{ /* all headers to be centered and same padding*/
 
 
 p{
+	background-color: rgb(0, 5, 12);
 	font-size: 25px;
 	font-family: futura;
 	margin-left: 150px;
 	margin-right: 150px;
 	margin-bottom: 70px;
-	padding-top:20px;
+	padding:20px;
 }
 
 .profile{
 	float: right;
-	width: 450px;
-	height: 450px;
+	width: 500px;
+	height: 550px;
 	margin: 15px;
+	border-radius: 50%;
 	padding-bottom:35px;
 }
 
@@ -129,6 +134,7 @@ li{
 img{
 	width: 100%;
 }
+
 .container {
   padding-right: 15px;
   padding-left: 15px;

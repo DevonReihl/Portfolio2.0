@@ -23,7 +23,6 @@
 }
 
 .photo-overlay {
-	color: #fff;
 	position: absolute;
 	top: 30%;
 	right: 0;
@@ -33,7 +32,7 @@
 	padding-right: 20px;
 	justify-content: center; /* For centering text inside .photo-overlay */
 	align-items: center;
-	/*background: rgba(0,0,0, .5);*/
+
 }
 
 
