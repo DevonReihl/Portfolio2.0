@@ -1,67 +1,50 @@
 
 body {
-	background-image: url("https://i.pinimg.com/originals/e0/d0/67/e0d067202106b85c5d1fc7a67683704f.jpg");
-    background-position: center center;
-	background-size: cover; */
-	 /* removed image to simplify portfolio
-	/* background-color: #949494; */
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #b4b3b3;
 }
-header {
-	background-color: rgb(12, 4, 78);
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+header {
+	background-color: rgb(164, 233, 250);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	width: 100%;
+	height: auto;
 }
 
 header h1{
-    margin: 0;
-    padding-top: 20px;
+    margin-right: 35px;
     text-align: center;
-    font-size: 52px;
-    color: #fff;
-
-    
+    font-size: 20px;
+    color:#0000EE;    
 }
 
 header nav{
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content: center;     
 }
 
 header nav ul{
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    
+    display: flex-end;
+	list-style: none;
+	margin-right: 10px;
 }
 
 header nav ul li a{
     font-family: Montserrat;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-    
-    
+	text-decoration: none;
+	font-size: 12px;
+	padding-left: 5px;
 }
-/* header nav ul li: last-child a{  need to fix syntax cause other issues
-    margin-right: 0;
-} */
 
+header nav ul li a:hover {
+	color: #0000EE;
+}
 
-
-/* adding to make links more dynamic*/
-a {
-	font-size: 30px;
-	padding-left: 15px;
-	text-shadow: 1px 1px rgb(75, 74, 74);
-  }
-  
-a:link    { color:  rgb(18, 198, 243);  }
-a:visited { color: rgb(18, 198, 243);   }
-a:hover   { color:rgb(58, 44, 250);  }
-a:active { color: rgb(57, 120, 236);} 
+a:link    { color: #4444ee  }
+a:visited { color: #551A8B   }
+a:hover   { color:#0000EE }
+a:active { color:#EE0000 } 
 
 
 .navbar {
@@ -75,22 +58,15 @@ h2, h3{ /* all headers to be centered and same padding*/
 
 
 p{
-	background-color: rgb(0, 5, 12);
-	font-size: 25px;
+	font-size: 15px;
 	font-family: futura;
-	margin-left: 150px;
-	margin-right: 150px;
-	margin-bottom: 70px;
-	padding:20px;
 }
 
 .profile{
 	float: right;
-	width: 500px;
-	height: 550px;
-	margin: 15px;
+	width: 300px;
+	height: 250px;
 	border-radius: 50%;
-	padding-bottom:35px;
 }
 
 h2{
@@ -101,38 +77,30 @@ h2{
 
 h3{
 	font-size: 30px;
-	margin-top:20px;
-	padding-top:15px;
-}
-
-.white-text{
-  color: white;
-}
-.black-text{
-  color: rgb(0,0,0);
-}
-.box{
-	background-color:#949494;
-	margin:20px 60px;
-	
 }
 
 ul{
-	
+	list-style-type: none;
 	text-align: center;
-	list-style:circle;
-	list-style-position: inside;
 }
+
 ol{
-	list-style: upper-roman;
 	text-align: center;
-	list-style-position: inside;
+	list-style-type: none;
 }
+
 li{
 	display: inline;
 }
+
 img{
 	width: 100%;
+}
+
+.skills{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;	
 }
 
 .container {
@@ -141,30 +109,47 @@ img{
   margin-right: auto;
   margin-left: auto;
 }
+
 .photo-container {
 	text-align: center;
 	margin: 10%;
 	width: 300px;
 	height: 169px;
 }
+
 .flex-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	padding: 10px;
 	border-radius: 8px;
 	margin: 0px auto;
 }
+
+.flex-container .skills li {
+	display: flex;
+}
+
 .items {
 	flex: 1;
 }
+
 .items-double {
 	flex: 2;
 }
 
+footer {
+	justify-content: center;
+	align-items: center;
+}
+
+footer li {
+	margin: 10px;
+}
 
 @media all and (min-width: 600px){
 	.flex-container{
+		display: flex;
 		flex-direction: row;
 	}
 	header{
@@ -173,17 +158,39 @@ img{
         
     }
     header nav h1{
-        margin: 10px 150px 10px 0;
+        margin: 10px 175px 10px 0;
         padding-top: 0;
-        font-size: 48px;
+        font-size: 52px;
 
 	}
 	
 	header nav ul{
-		margin: 14px 0 0 300px;
+		margin: 20px 0 0 300px;
+	}
+
+	header nav ul li a{
+		font-size: 35px;
+		padding-left: 10px;
 	}
 	
-    header nav ul li a:hover {
-        color: #bdbdbd;
-    }
+	p{
+		font-size: 25px;
+		margin: 20px 100px;
+		padding:20px;
+	}
+	
+	.profile{
+		float: right;
+		width: 500px;
+		height: 450px;
+		margin: 15px;
+		border-radius: 50%;
+		padding-bottom:35px;
+	} 
+
+	footer a {
+		margin: 10px;
+		font-size: 40px;
+	}
+
 }
