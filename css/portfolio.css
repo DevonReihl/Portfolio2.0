@@ -1,101 +1,49 @@
 
 body {
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #fcf5f5;
+	font-family: 'Lora', serif;
+	background-color: #1E152A;
+	color: #68CDD9;
 }
 
-header {
-	background-color: rgb(164, 233, 250);
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	width: 100%;
-	height: auto;
+.name {
+	color: #f5d451;
 }
 
-header h1{
-    margin-right: 35px;
-    text-align: center;
-    font-size: 20px;
-    color:#0000EE;    
+
+a {
+  text-align: center;
+  margin: 5px;
 }
 
-header nav{
-    display: flex;
-    justify-content: center;     
-}
+a:link    { color: #68CDD9 }
+a:visited { color: #68CDD9 }
+a:hover   { color:#D1DBDB }
 
-header nav ul{
-    display: flex-end;
-	list-style: none;
-	margin-right: 10px;
-}
-
-header nav ul li a{
-    font-family: Montserrat;
-	text-decoration: none;
-	font-size: 12px;
-	padding-left: 5px;
-}
-
-header nav ul li a:hover {
-	color: #0000EE;
-}
-
-a:link    { color: #4444ee  }
-a:visited { color: #551A8B   }
-a:hover   { color:#0000EE }
-a:active { color:#EE0000 } 
-
-
-.navbar {
-	text-align: end;
-}
-
-h2, h3{ /* all headers to be centered and same padding*/
-	padding:20px;
+h2, h4{
 	text-align: center;
+	font-family: 'Roboto';
 }
 
-
-p{
-	font-size: 15px;
-	font-family: futura;
+h3 {
+	margin: 10px 20px 0 20px;
 }
 
 .profile{
 	float: right;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
+	border-radius: 20px;
+	width: 100%;
+	margin: 20px;
 }
 
-h2{
-	font-size: 50px;
-	margin:20px;
-	padding-top:20px;
-}
-
-h3{
-	font-size: 30px;
-}
 
 ul{
 	list-style-type: none;
 	text-align: center;
 }
 
-ol{
-	text-align: center;
-	list-style-type: none;
-	padding: 0;
-}
-
 li{
 	display: inline;
-}
-
-img{
-	width: 100%;
 }
 
 .skills{
@@ -104,37 +52,50 @@ img{
 	flex-wrap: wrap;	
 }
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.dropbtn {
+
+  cursor: pointer;
 }
 
-.photo-container {
-	text-align: center;
-	margin: 10%;
-	width: 300px;
-	height: 169px;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 .flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 10px;
 	border-radius: 8px;
-	margin: 0px auto;
 }
 
 .flex-container .skills li {
 	display: flex;
 	flex-direction: column;
-}
-
-.testing{
-	margin-top: 0;
 }
 
 .items {
@@ -145,10 +106,39 @@ img{
 	flex: 2;
 }
 
-.hoverlink {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 30px;
-	font-weight: bold;
+.projectCard {
+	width: 300px;
+	min-height: 750px;
+  border-radius: 8px;
+  border: 2px rgb(104, 104, 104) solid;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: auto;
+	margin-top: 25px;
+	color: black;
+}
+
+.projectLink:link {
+	color: blue;
+}
+.projectLink:visited {
+	color: rgb(18, 18, 236);
+}
+.projectLink:hover{
+	color: rgb(69, 69, 250);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.container {
+	padding: 2px 16px;
+	margin: 10px;
 }
 
 footer {
@@ -160,50 +150,18 @@ footer li {
 	margin: 10px;
 }
 
-@media all and (min-width: 600px){
+@media all and (min-width: 800px){
 	.flex-container{
 		display: flex;
 		flex-direction: row;
 	}
-	header{
-        display: flex;
-        padding: 0 30px;
-        
-    }
-    header nav h1{
-        margin: 10px 175px 10px 0;
-        padding-top: 0;
-        font-size: 52px;
 
-	}
-	
-	header nav ul{
-		margin: 20px 0 0 300px;
-	}
-
-	header nav ul li a{
-		font-size: 35px;
-		padding-left: 10px;
-	}
-	
-	p{
+	.items-double{
 		font-size: 25px;
+		padding: 30px;
 		margin: 20px 100px;
-		padding:20px;
-	}
-	
-	.profile{
-		float: right;
-		width: 500px;
-		height: 500px;
-		margin: 15px;
-		border-radius: 50%;
-		padding-bottom:35px;
-	} 
-
-	footer a {
-		margin: 10px;
-		font-size: 40px;
+		border-radius: 20px;
+  	border: 2px #f5d451 solid;
 	}
 
 }

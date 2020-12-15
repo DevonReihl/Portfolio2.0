@@ -1,19 +1,14 @@
 .photo {
 	position: relative;
 	line-height: 0;
-	margin-bottom: 2em;
+	/* margin-bottom: 2em; */
 	overflow: hidden;
 	border-radius: 8px;
 	padding:1px;
-	border:1px solid #021a40;
-	
-}
-
-.photo-container {
+	border:2px solid #054bbb;
 	text-align: center;
-	margin: 15px auto;
-	width: 300px;
-    height: 169px;
+  height: 150px;
+	
 }
 
 .photo-container img {

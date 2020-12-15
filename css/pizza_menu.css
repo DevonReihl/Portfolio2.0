@@ -36,21 +36,12 @@ h2{
 	font-weight:900;
 }
 
-/*NOT WORKING!!!
-	
-	#menuBG{
-	background:url(../img/pizza.jpg) repeat;
-	background-size: cover;
-}*/
-
 .container{
 	padding-right:15px;
 	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto;
 }
-
-
 
 form{
 	font-size:15pt;
@@ -66,24 +57,6 @@ form{
 	background:#1eb213;
 	box-shadow:2px 3px 3px 0px rgba(0,0,0,0.3);
 	font-family:'Raleway', sans-serif;
-}
-
-/*input[type="text"] {
-	font-size:15px;
-	outline:none;
-	font-weight:600;
-	color:#1eb213;
-	padding:2% 1% 2% 7%;
-	width:75%;
-	border-top:1px solid #1eb213;
-	border-right:2px solid #1eb213;
-	border-bottom:2px solid #1eb213;
-	border-left:1px solid #1eb213;
-	margin:10px 1em;
-	border-radius:7px;
-	background:#13161b;
-	box-shadow:inset 0px 3px 0px 0px rgba(5, 5, 5, 0,15);
-	font-family:'Raleway', san-serif;
 }
 
 

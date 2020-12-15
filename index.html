@@ -4,69 +4,47 @@
       <meta charset="UTF-8">
       <title>DevonReihlPortfolio</title>
       <link rel="stylesheet" href="./css/portfolio.css">
-	  <link rel="stylesheet" href="./css/photo_animation.css">
+	  	<link rel="stylesheet" href="./css/photo_animation.css">
       <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    </head>
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+		</head>
     <body>
   
-  		<!--NAVBAR-->
-
-		<header>
-			<nav> 
-				<h1>Devon Reihl </h1>
-				<ul class = "navbar">
-				  <li>
-					<a  href="#section1">About</a> 
-				  </li>
-				  <li>
-					<a  href="#section2">Skills</a> 
-				  </li>
-				  <li>
-					<a  href="#section3">Projects</a> 
-				  </li>
-				  <li>
-					<a  href="#footer">Contact</a> 
-				  </li>
-			  </ul>
-		  	</nav>
-
-		</header>
-		  
 		<!--ABOUT-->
 	  
-		<section id="section1">
+		<section id='section1'>
 	
-        	<div class="flex-container">
-				<div class="items-double">
+			<div class='flex-container'>
+				<div class='items-double'>
 					<p>
-						Hi!<br>
-						My name's Devon. I am an up and coming software developer in Portland, OR!<br><br>
-						I want to fix all your problems, ok only your coding problems.<br><br>
-						Born in Arizona I went to college for Psychology and music. 
-						After working with mentally ill adults for a short time I switched focus to become a mom.<br><br> 
-						My many skills from years as a homeschooling mom and new coding skills put me in the right place to take on the world. 
+						Hi, I'm <span class='name'>Devon Reihl</span>. I am an up and coming software developer in Portland, OR! Growing up in Arizona, I have always loved 
+						solving puzzles and fixing things so I went to college for Psychology (minor in music) so I could help fix human problems. 
+						Raising homeschooled children presented a whole new version of puzzles to solve and a constant learning curve. When it came 
+						time to go back to paid work I wanted to continue problem-solving and learning. Computer programming gives me a way to use all 
+						the skills I have learned from college and parenting plus learn new ones to always be able to fix puzzles in code.
 					</p>
 				</div>
 			
-				<div class="items">
-					<img class='profile' src="img/DevonProfilePic.jpg" alt="Me" >
+				<div class='items'>
+					<img class='profile' src='img/DevonProfilePic.jpg' alt='Me' >
 				</div>
 		 
-        	</div>
+			</div>
 		</section>
   
-	  	<hr>
+		<hr>
 
 		<!--SKILLS-->
 	 
-		<section id="section2">
+		<section id='section2'>
 			<h2>
 			What can I bring to your company
 			</h2>
 			
-			<div class="flex-container">
-				<div  class="skills">
+			<div class='flex-container'>
+				<div  class='skills'>
 					<h3>Client-Side</h3>
 					<ul>
 						<li>JavaScript</li>
@@ -75,11 +53,10 @@
 						<li>HTML5</li>
 						<li>CSS3</li>
 						<li>Bootstrap</li>
-					</ul>
-				
+					</ul>	
 				</div>
 	
-				<div class="skills">
+				<div class='skills'>
 					<h3>Server-Side</h3>
 					<ul>
 						<li>Node.js</li>
@@ -89,7 +66,7 @@
 					</ul>
 				</div>
 	
-				<div class="skills">
+				<div class='skills'>
 					<h3>Database</h3>
 					<ul>
 						<li>PostgreSQL</li>
@@ -98,128 +75,115 @@
 					</ul>
 				</div>
 	
-				<div class="skills">
+				<div class='skills'>
 					<h3>Other Skills</h3>
-					<ul>
-						<li>
-							<h4 class="testing">Testing</h4>
-							<ol>
-								<li>Enzyme</li>
-								<li>Jest</li>
-								<li>Mocha</li>
-								<li>Chai</li>
-								<li>Supertest</li>
-							</ol>
-						</li>
-						<li>
-							<h4>Methodologies</h4>
-							<ol>
-								<li>RESTful</li>
-								<li>APIs</li>
-								<li>Azure</li>
-								<li>DevOps</li>
-								<li>Agile/Scrum</li>
-							</ol>
-						</li>
-						<li>
-							<h4>Version Control</h4>
-							<ol>
-								<li>Git</li>
-								<li>Github</li>
-							</ol>
-						</li>
-						<li>
-							<h4>Data Science</h4>
-							<ol>
-								<li>Algorithms</li>
-								<li>Data Structures</li>
-							</ol>
-						</li>
-					</ul>
+					<div class="dropdown">
+						<div class="dropbtn">Testing</div>
+						<ul class="dropdown-content">
+							<li>Enzyme</li>
+							<li>Jest</li>
+							<li>Mocha</li>
+							<li>Chai</li>
+							<li>Supertest</li>
+						</ul>
+					</div>
+					
+					<div class="dropdown">
+						<div class="dropbtn">Methodologies</div>
+						<ul class="dropdown-content">
+							<li>RESTful</li>
+							<li>APIs</li>
+							<li>Azure</li>
+							<li>DevOps</li>
+							<li>Agile/Scrum</li>
+						</ul>
+					</div>
+					
+					<div class="dropdown">
+						<div class="dropbtn">Version Control</div>
+						<ul class="dropdown-content">
+							<li>Git/Github</li>
+							<li>Azure</li>
+							<li>Apache</li>
+						</ul>
+					</div>
+					
+					<div class="dropdown">
+						<div class="dropbtn">Data Science</div>
+						<ul class="dropdown-content">
+							<li>Algorithms</li>
+							<li>Data Structures</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 						  
-        </section>
+		</section>
 	  
-	   	<hr>
+		<hr>
 
 		<!--Projects-->
-  
-      	<section id="section3">
+
+		<section id='section3'>
 			<h2>Projects</h2><br>
-				<div class="flex-container">
+				<div class='flex-container'>
 				
 					<!-- Project 1 -->
-					<figure class="photo-container">
-						<a href="https://github.com/DevonReihl/WaysAppClient" target="_blank">Client repo</a>
-						<a href="https://github.com/DevonReihl/WaysAppAPIServer" target="_blank">Server</a>
-						<div class="photo">
-							<img src="./img/WaysApp.png" alt="Ways App">
-							<div class="photo-overlay">
-								<a class='hoverlink' href="https://ways-client.vercel.app/" target="_blank">Ways App</a>
+					<figure class='projectCard'>
+						<div class='photo'>
+							<img src='./img/WaysApp.png' alt='Ways App'>
+						</div>
+						<div class='container'>
+							<h4><a class='projectLink' href='https://ways-client.vercel.app/' target='_blank'>Ways App</a></h4>
+							<p>This app helps you plan the perfect trip! You can also see other trips to get ideas for your trip.</p>
+							<p>Developed using: React, Node.js, PostgreSQL and third party API's </p>
+							<div projectCard-bottom>
+								<a class='projectLink' href='https://github.com/DevonReihl/WaysAppClient' target='_blank'>Client repo</a>
+								<a class='projectLink' href='https://github.com/DevonReihl/WaysAppAPIServer' target='_blank'>Server</a>
 							</div>
 						</div>
 					</figure>
 					
 					<!-- Project 2 -->
-					<figure class="photo-container">
-						<a href="https://github.com/DevonReihl/Capstone-spaced-repetition-client" target="_blank">Client Repo</a>
-						<a href="https://github.com/DevonReihl/Capstone-Spaced-repetition-API" target="_blank">Server</a>
-						<div class="photo">
-							<img src="./img/SpaceRepetition.png" alt="FrenchBistro">
-							<div class="photo-overlay">
-								<a class='hoverlink' href="https://spacerepetition.vercel.app" target="_blank">Spaced Repetition</a>
-							</div>
+					<figure class='projectCard'>
+						<div class='photo photo-container'>
+							<img src='./img/SpaceRepetition.png' alt='FrenchBistro'>
 						</div>
+						<div class='container'>
+							<h4><a class='projectLink' href='https://spacerepetition.vercel.app' target='_blank'>Spaced Repetition</a></h4>
+							<p>This app help a user to start to learn French with 10 food words</p>
+							<p>Developed using: React, Node.js, Express, and PostgreSQL</p>
+							<a class='projectLink' href='https://github.com/DevonReihl/Capstone-spaced-repetition-client' target='_blank'>Client Repo</a>
+							<a class='projectLink' href='https://github.com/DevonReihl/Capstone-Spaced-repetition-API' target='_blank'>Server</a>
+						</div>		
 					</figure>
 					
 					<!-- Project 3 -->
-					<figure class="photo-container">
-						<a href="https://github.com/DevonReihl/DSA-petful-client">Client repo</a>
-						<a href="https://github.com/DevonReihl/DSA-petful-server">Server</a>
-						<div class="photo">
-							<img src="./img/Petful.png" alt="">
-							<div class="photo-overlay">
-								<a class='hoverlink' href="https://petful-client-zeta.vercel.app/">Petful App</a>
-							</div>
+					<figure class='projectCard'>
+						
+						<div class='photo'>
+							<img src='./img/Petful.png' alt=''>
 						</div>
+						<div class='container'>
+							<h4><a class='projectLink' href='https://petful-client-zeta.vercel.app/' target='_blank'>Petful App</a></h4>
+							<p>For an animal shelter that only has cats and dogs and functions on a first come first serve basis for both the pets and to people</p>
+							<p>Developed using: React, Node.js, Express, and basic queue Algorithms</p>
+							<a class='projectLink' href='https://github.com/DevonReihl/DSA-petful-client'>Client repo</a>
+							<a class='projectLink' href='https://github.com/DevonReihl/DSA-petful-server'>Server</a>
+						</div>	
 					</figure>
-				</div>
-				<div class="flex-container">						
+
 					<!-- Project 4 -->
-					<figure class="photo-container">
-						<a href="" target="_blank">Future Project</a>
-						<div class="photo">
-							<img src="./img/computer.jpg" alt="">
-							<div class="photo-overlay">
-								<a class='hoverlink' href="" target="_blank">Future Project</a>
-							</div>
-						</div>
-					</figure>
-					
-					<!-- Project 5 -->
-					<figure class="photo-container">
-						<a href="https://github.com/DevonReihl/JavaScript-Coding-projects" target="_blank">JS repo</a>
+					<figure class='projectCard'>
 						<div class="photo">
 							<img src="./img/pizza.jpg" alt="">
-							<div class="photo-overlay">
-								<a class='hoverlink' href="pizza_menu.html" target="_blank">Pizza Menu</a>
-							</div>
 						</div>
+						<h4><a class='projectLink' href="pizza_menu.html" target="_blank">Pizza Menu</a></h4>
+						<p>This is an early project to create and pizza menu</p>
+						<p>Developed using: Html5, CSS3, Javascript, and Bootstrap </p>
+						<a class='projectLink' href="https://github.com/DevonReihl/JavaScript-Coding-projects" target="_blank">JS repo</a>
 					</figure>
-					
-					<!-- Project 6 -->
-					<figure class="photo-container">
-						<a href="" target="_blank">Future Project</a>
-						<div class="photo">
-							<img src="./img/computer.jpg" alt="">
-							<div class="photo-overlay">
-								<a class='hoverlink' href="" target="_blank">Future Project</a>
-							</div>
-						</div>
-					</figure>
-					
-				</div>
+				</div>					
 		</section><br>
 	  
 	  <hr>
@@ -235,18 +199,13 @@
 				<span><a href="https://github.com/DevonReihl"><i class="fab fa-github"></i></a></span>
 			  </li>
 			  <li>
-				<span><a href="mailto: devon.reihl@gmail.com">Send Email</a></span>
-			  </li>
+				<span><a href="mailto:devon.reihl@gmail.com"><i class="far fa-envelope"></i></a></span>
+				</li>
+				<li><span>&copy;2020 Devon Reihl</span></li>
 			</ul>
-			<a class="copyright">&copy;2020 Devon Reihl</a>
+			
 	</footer>  
-	 
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>$('.popover-dismiss').popover({trigger: 'focus'})</script>
+	
 	</body> 
     
 </html>
