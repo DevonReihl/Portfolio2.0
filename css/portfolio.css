@@ -56,38 +56,6 @@ li{
 	flex-wrap: wrap;	
 }
 
-.dropbtn {
-
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-	position: absolute;
-	color: black;
-	background-color: #7cedfa;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
 .flex-container {
 	display: flex;
 	flex-direction: row;
